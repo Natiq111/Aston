@@ -1,0 +1,94 @@
+1.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите первое число: ");
+        int a = scanner.nextInt();
+        System.out.print("Введите второе число: ");
+        int b = scanner.nextInt();
+
+        if (a > b) {
+            System.out.println(a + " > " + b);
+        } else if (a < b) {
+            System.out.println(a + " < " + b);
+        } else {
+            System.out.println(a + " = " + b);
+        }
+        scanner.close();
+    }
+}
+
+2.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Input
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Enter b: ");
+        double b = scanner.nextDouble();
+
+        scanner.close();
+
+
+        // Operations
+        double sum = a + b;
+        double difference = a - b;
+        double quotient = a / b;
+        double product = a * b;
+
+
+        // Output
+        System.out.printf("Result of the operations: %f %f %f %f%n", sum, difference, quotient, product);
+
+    }
+
+}
+
+3. 
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Введите первую строку: ");
+        String a = scanner.nextLine();
+        
+        System.out.print("Введите вторую строку: ");
+        String b = scanner.nextLine();
+        
+        if (a.equals(b)) {
+            System.out.println("Строки идентичны");
+        } else {
+            System.out.println("Строки неидентичны");
+        }
+        
+        scanner.close();
+    }
+}
+
+4.
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        System.out.println("Четные числа в массиве:");
+        for (int num : numbers) {
+            if (num % 2 == 0) {
+                System.out.println(num);
+            }
+        }
+    }
+}
